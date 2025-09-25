@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum1/basic_widget/image_widget.dart';
+import 'package:praktikum1/basic_widget/text_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -105,6 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const MyTextWidget(),
+            const MyImageWidget(),
             const Text(
               'You have pushed the button this many times:',
             ),
