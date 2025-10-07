@@ -56,6 +56,14 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Air Terjun Tumpak Sewu Semeru atau yang kita kenal dengan sebutan Tebing Nirwana adalah obyek wisata yang terletak di Desa Wisata Sidomulyo Kec. Pronojiwo Kabupaten Lumajang yang berjarak   47 km arah selatan dai pusat kota Lumajang yang memiliki eksotika air terjun yang luar biasa, obyek ini berdekatan dengan letak obyek wisata Goa Tetes.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Lavina 2341760062',
       home: Scaffold(
@@ -66,6 +74,7 @@ class MyApp extends StatelessWidget {
             children: [
               titleSection,
               buttonSection,
+              textSection,
             ],
           )),
     );
